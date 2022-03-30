@@ -61,12 +61,12 @@ users = [
 ]
 
 
-# def admin_required(fn):
-#    @wraps(fn)
-#    def wrapper(*args, **kwargs):
+def admin_required(fn):
+   @wraps(fn)
+   def wrapper(*args, **kwargs):
 
-#           return fn(*args, **kwargs)
-#    return wrapper
+          return fn(*args, **kwargs)
+   return wrapper
 
 
 def checkUser(username, password):
