@@ -90,7 +90,7 @@ def login():
         if validUser != None:
             # set JWT token
 
-            user_claims = {"role": validUser["roles"]}
+            user_claims = {"role": validUser["role"]}
             access_token = create_access_token(
                 username, user_claims=user_claims)
 
